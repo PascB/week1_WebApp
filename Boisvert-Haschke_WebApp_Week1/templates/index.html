@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Newest Entry {% endblock %}
+
+{% block content %}
+<h1>Newest Entries</h1>
+{% for item in values %}
+<p>Name: {{item.name}}</p>
+<p>Title: {{item.title}}</p>
+<p>Date: {{item.date}}</p>
+<p>Description: {{item.description}}</p>
+<br />
+{% endfor %}
+
+<a href="/form">Add a new entry</a>
+{% endblock %}

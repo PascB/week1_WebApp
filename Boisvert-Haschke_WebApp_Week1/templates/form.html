@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %} Add entry {% endblock %}
+
+{% block content %}
+<h1>Add entry</h1>
+<form action="#" method="POST">
+    <p>Name:</p>
+    <p><input type="text" name="nm" /></p>
+    <p>Title:</p>
+    <p><input type="text" name="ttl" /></p>
+    <p>Date:</p>
+    <p><input type="text" name="dt" /></p>
+    <p>Description:</p>
+    <p><input type="text" name="descr" /></p>
+    <p><input type="submit" value="submit" /></p>
+</form>
+
+{% endblock %}
